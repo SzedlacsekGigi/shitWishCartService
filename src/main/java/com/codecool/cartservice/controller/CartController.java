@@ -1,6 +1,6 @@
 package com.codecool.cartservice.controller;
 
-import com.codecool.cartservice.CartService;
+import com.codecool.cartservice.service.CartService;
 import com.codecool.cartservice.model.CartItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
