@@ -20,4 +20,8 @@ public class CartService {
     }
 
 
+    public void deleteCartItem(Long id) {
+        CartItem deletable = repository.getOne(id);
+        repository.delete(deletable);
+    }
 }
