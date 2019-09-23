@@ -28,4 +28,10 @@ public class CartItem {
     private Double price;
 
     private String picture;
+
+    public CartItem(String name, String picture, Double price) {
+        this.name = name;
+        this.picture = picture;
+        this.price = price;
+    }
 }
