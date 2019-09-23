@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/cart")
@@ -23,5 +24,10 @@ public class CartController {
     @DeleteMapping("/delete/{id}")
     public void deleteCartItem(@PathVariable("id") Long id) {
         cartService.deleteCartItem(id);
+    }
+
+    @PostMapping("/add")
+    public void addItemToCart(@RequestBody Map<String, String> product){
+        cartService.addNewItem(product);
     }
 }

@@ -18,7 +18,6 @@ import javax.validation.constraints.NotNull;
 public class CartItem {
 
     @Id
-    @GeneratedValue
     private Long id;
 
     @NotNull
@@ -29,7 +28,8 @@ public class CartItem {
 
     private String picture;
 
-    public CartItem(String name, String picture, Double price) {
+    public CartItem(Long id, String name, String picture, Double price) {
+        this.id = id;
         this.name = name;
         this.picture = picture;
         this.price = price;
