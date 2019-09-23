@@ -1,7 +1,7 @@
 package com.codecool.cartservice.controller;
 
 import com.codecool.cartservice.CartService;
-import com.codecool.cartservice.model.CartIem;
+import com.codecool.cartservice.model.CartItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class CartController {
     CartService cartService;
 
     @GetMapping("/all")
-    public List<CartIem> getAllCartItems() {
+    public List<CartItem> getAllCartItems() {
         return cartService.retrieveAll();
     }
 }

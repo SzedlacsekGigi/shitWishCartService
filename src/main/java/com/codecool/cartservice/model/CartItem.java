@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class CartIem {
+public class CartItem {
 
     @Id
     @GeneratedValue
